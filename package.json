@@ -5,7 +5,7 @@
     "scripts": {
       "test": "mocha tests/test_sesi9.js --recursive --timeout 60000",
       "test-parallel": "mocha tests --parallel --recursive --timeout 60000",
-      "test-pertama": "mocha tests --grep 'Pertama' --recursive --timeout 60000",
+      "test-grep": "mocha tests/test_sesi9.js --grep 'A-Z' --recursive --timeout 60000",
       "jalanin-mochawesome": "mocha tests/test_sesi9.js --recursive --timeout 60000 --reporter mochawesome",
       "jalanin-simple-html": "mocha tests --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
     },
