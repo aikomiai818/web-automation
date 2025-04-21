@@ -6,12 +6,12 @@ describe('Test Saucedemo', function (){
     let driver;
 
     beforeEach(async function () {
-        // Menjalankan Firefox di background (headless mode)
-        // options = new firefox.Options();
-        // options.addArguments('-headless'); 
-        // driver = await new Builder().forBrowser('firefox').setFirefoxOptions(options).build();
+        //Menjalankan Firefox di background (headless mode)
+        options = new firefox.Options();
+        options.addArguments('-headless'); 
+        driver = await new Builder().forBrowser('firefox').setFirefoxOptions(options).build();
         
-        driver = await new Builder().forBrowser('firefox').build();
+        // driver = await new Builder().forBrowser('firefox').build();
 
         await driver.get('https://www.saucedemo.com');
         const title = await driver.getTitle();
